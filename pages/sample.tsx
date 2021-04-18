@@ -6,14 +6,12 @@ import Sample from '@/components/Sample';
  * Using lower case for lower case URL. This is the
  * sample page.
  */
-const sample = () => {
-  return (
-    <div>
-      <h1>Sample Page</h1>
-      <Sample />
-      <Link href="/">Back to home</Link>
-    </div>
-  );
-};
+const sample = () => (
+  <div>
+    <h1>Sample Page</h1>
+    <Sample />
+    <Link href="/">Back to home</Link>
+  </div>
+);
 
 export default sample;

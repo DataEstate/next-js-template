@@ -1,3 +1,4 @@
+import React from 'react';
 import useRemoveServerSideJss from '@/hooks/useRemoveServerSideJss';
 import { CssBaseline } from '@material-ui/core';
 import { AppProps } from 'next/app';
@@ -16,10 +17,14 @@ const DeApp = ({ Component, pageProps }: AppProps) => {
   });
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </QueryClientProvider>
+    <div suppressHydrationWarning>
+      {typeof window === 'undefined' ? null : (
+        <QueryClientProvider client={queryClient}>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </QueryClientProvider>
+      )}
+    </div>
   );
 };
 

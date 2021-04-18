@@ -43,6 +43,7 @@ module.exports = {
       1,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
+    'react/react-in-jsx-scope': 'off', // NextJS has React as global import
     'react/jsx-one-expression-per-line': 'off',
     'react/require-default-props': 'off',
     'react/no-array-index-key': 'warn',
