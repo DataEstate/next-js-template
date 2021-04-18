@@ -4,6 +4,13 @@ v1.0.0
 
 This project is used as a `NextJS Example` to setup next projects and not as its own app to be built on.
 
+This template uses the following technology:
+
+- `@material-ui` as components library
+- `axios` as the http request library.
+- `@testing-library` and `jest` for testing framework.
+- `cypress` and `cypress-cucumber-prepropcessor` for BDD style testing.
+
 ## Installation
 
 Setup next project like this:
